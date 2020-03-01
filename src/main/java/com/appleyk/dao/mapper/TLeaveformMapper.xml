@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.appleyk.dao.mapper.TLeaveformMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.appleyk.dao.entity.TLeaveformEntity">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="uid" property="uid" />
+        <result column="days" property="days" />
+        <result column="reason" property="reason" />
+        <result column="status" property="status" />
+        <result column="utime" property="utime" />
+        <result column="type" property="type" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, uid, days, reason, status, utime, type
+    </sql>
+
+</mapper>
